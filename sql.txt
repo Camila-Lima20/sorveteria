@@ -1,0 +1,20 @@
+CREATE DATABASE sorveteria;
+USE sorveteria;
+
+CREATE TABLE sorvetes (
+    nome VARCHAR(100) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    quantidade INT NOT NULL,
+    PRIMARY KEY (nome)
+);
+
+http://localhost/phpmyadmin
+
+<button onclick="window.location.href='index.php'">Voltar para página inicial</button>
+
+Uso do Sistema de Grid:
+A <div class="row"> cria uma linha para os botões.
+Cada botão é colocado dentro de uma <div> com classes col-12 e col-md-3.
+col-12: Em telas pequenas (sm), cada botão ocupará 100% da largura da linha, fazendo com que fiquem empilhados.
+col-md-3: Em telas médias (md) e maiores, cada botão ocupará 25% da largura da linha, permitindo que quatro botões fiquem lado a lado.
+Classe mb-2: A classe mb-2 foi mantida para adicionar uma margem inferior aos botões, garantindo que haja espaço entre eles quando empilhados.
